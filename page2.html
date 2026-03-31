@@ -8,9 +8,6 @@
 :root{
   --bd:#d1d5db;
   --pri:#3b82f6;
-  --pri-dark:#2563eb;
-  --success:#10b981;
-  --success-dark:#059669;
   --bg:#f0f4f8;
   --card:#ffffff;
   --header-bg:linear-gradient(135deg,#1e3a5f 0%,#2563eb 100%);
@@ -21,123 +18,77 @@ body{
   margin:0;background:var(--bg);color:#1f2937;
 }
 .page-header{
-  background:var(--header-bg);
-  color:#fff;
-  padding:18px 24px 14px;
-  box-shadow:0 2px 8px rgba(0,0,0,.2);
+  background:var(--header-bg);color:#fff;
+  padding:18px 24px 14px;box-shadow:0 2px 8px rgba(0,0,0,.2);
 }
-.page-header h1{
-  margin:0 0 4px;font-size:20px;font-weight:700;letter-spacing:.03em;
-}
-.page-header .subtitle{
-  font-size:12px;opacity:.8;
-}
+.page-header h1{margin:0 0 4px;font-size:20px;font-weight:700;letter-spacing:.03em}
+.page-header .subtitle{font-size:12px;opacity:.8}
 .page-badge{
-  display:inline-block;
-  background:rgba(255,255,255,.2);
-  border:1px solid rgba(255,255,255,.3);
-  border-radius:20px;
-  padding:2px 10px;
-  font-size:11px;
-  margin-left:10px;
-  vertical-align:middle;
+  display:inline-block;background:rgba(255,255,255,.2);
+  border:1px solid rgba(255,255,255,.3);border-radius:20px;
+  padding:2px 10px;font-size:11px;margin-left:10px;vertical-align:middle;
 }
 .container{padding:16px 20px}
-table{
-  width:100%;border-collapse:collapse;margin:8px 0;
-  table-layout:fixed;background:var(--card);
+.table-wrapper{
   border-radius:10px;overflow:hidden;
-  box-shadow:0 2px 10px rgba(0,0,0,.08);
+  box-shadow:0 2px 10px rgba(0,0,0,.08);margin:8px 0;
 }
-th,td{
-  border:1px solid #e5e7eb;
-  padding:11px 10px;text-align:center;vertical-align:middle;
+table{
+  width:100%;border-collapse:collapse;table-layout:fixed;background:var(--card);
 }
+th,td{border:1px solid #e5e7eb;padding:11px 10px;text-align:center;vertical-align:middle}
 thead tr{background:var(--header-bg)}
-thead th{
-  color:#fff;font-size:13px;font-weight:600;
-  border-color:rgba(255,255,255,.15);letter-spacing:.04em;
-}
+thead th{color:#fff;font-size:13px;font-weight:600;border-color:rgba(255,255,255,.15);letter-spacing:.04em}
 tbody tr{transition:background .15s}
 tbody tr:hover{background:#eff6ff}
 colgroup col:nth-child(1){width:44%}
 colgroup col:nth-child(2){width:20%}
 colgroup col:nth-child(3){width:24%}
 colgroup col:nth-child(4){width:12%}
-.job-title{
-  font-weight:700;text-align:left;font-size:14px;color:#1e40af;
-  margin-bottom:3px;
-}
+.job-title{font-weight:700;text-align:left;font-size:14px;color:#1e40af;margin-bottom:3px}
 .job-desc{color:#6b7280;font-size:.88rem;text-align:left}
 .row-num{
   display:inline-block;background:#e0e7ff;color:#3730a3;
   border-radius:4px;padding:1px 6px;font-size:11px;font-weight:700;margin-right:6px;
 }
 .name-input{
-  width:95%;padding:7px 9px;
-  border:1px solid var(--bd);border-radius:6px;
-  font-size:13px;transition:border-color .15s,box-shadow .15s;
-  font-family:inherit;
+  width:95%;padding:7px 9px;border:1px solid var(--bd);border-radius:6px;
+  font-size:13px;transition:border-color .15s,box-shadow .15s;font-family:inherit;
 }
-.name-input:focus{
-  outline:none;border-color:var(--pri);
-  box-shadow:0 0 0 3px rgba(59,130,246,.15);
-}
+.name-input:focus{outline:none;border-color:var(--pri);box-shadow:0 0 0 3px rgba(59,130,246,.15)}
 .dl-btn{
   display:inline-block;padding:7px 14px;
   background:linear-gradient(135deg,#3b82f6,#2563eb);
-  color:#fff;border:none;border-radius:7px;
-  cursor:pointer;text-decoration:none;font-size:13px;font-weight:600;
-  box-shadow:0 2px 5px rgba(37,99,235,.3);
+  color:#fff;border:none;border-radius:7px;cursor:pointer;text-decoration:none;
+  font-size:13px;font-weight:600;box-shadow:0 2px 5px rgba(37,99,235,.3);
   transition:transform .1s,box-shadow .1s;
 }
-.dl-btn:hover{
-  transform:translateY(-1px);
-  box-shadow:0 4px 10px rgba(37,99,235,.4);
-}
+.dl-btn:hover{transform:translateY(-1px);box-shadow:0 4px 10px rgba(37,99,235,.4)}
 .dl-btn:active{transform:translateY(0)}
 .send-btn{
-  padding:7px 12px;
-  background:linear-gradient(135deg,#10b981,#059669);
-  color:#fff;border:none;border-radius:7px;
-  cursor:pointer;font-size:13px;font-weight:600;
-  box-shadow:0 2px 5px rgba(5,150,105,.3);
-  transition:transform .1s,box-shadow .1s;
-  font-family:inherit;
+  padding:7px 12px;background:linear-gradient(135deg,#10b981,#059669);
+  color:#fff;border:none;border-radius:7px;cursor:pointer;
+  font-size:13px;font-weight:600;box-shadow:0 2px 5px rgba(5,150,105,.3);
+  transition:transform .1s,box-shadow .1s;font-family:inherit;
 }
-.send-btn:hover{
-  transform:translateY(-1px);
-  box-shadow:0 4px 10px rgba(5,150,105,.4);
-}
+.send-btn:hover{transform:translateY(-1px);box-shadow:0 4px 10px rgba(5,150,105,.4)}
 .send-btn:active{transform:translateY(0)}
-.nav{
-  display:flex;justify-content:space-between;margin-top:14px;gap:8px;
-}
+.nav{display:flex;justify-content:space-between;margin-top:14px;gap:8px}
 .nav-btn{
-  padding:9px 18px;
-  border:2px solid var(--pri);border-radius:8px;
-  background:#fff;color:var(--pri);
-  cursor:pointer;font-size:13px;font-weight:600;
-  text-decoration:none;display:inline-block;
-  transition:background .15s,color .15s;
-  font-family:inherit;
+  padding:9px 18px;border:2px solid var(--pri);border-radius:8px;
+  background:#fff;color:var(--pri);cursor:pointer;font-size:13px;font-weight:600;
+  text-decoration:none;display:inline-block;transition:background .15s,color .15s;font-family:inherit;
 }
 .nav-btn:hover{background:var(--pri);color:#fff}
-.nav-btn[disabled]{
-  opacity:.4;cursor:not-allowed;
-  border-color:var(--bd);color:#9ca3af;
-}
+.nav-btn[disabled]{opacity:.4;cursor:not-allowed;border-color:var(--bd);color:#9ca3af}
 .nav-btn[disabled]:hover{background:#fff;color:#9ca3af}
 .note{
-  color:#6b7280;font-size:12px;margin-top:10px;
-  padding:8px 12px;background:#f9fafb;
-  border-left:3px solid var(--pri);border-radius:0 6px 6px 0;
+  color:#6b7280;font-size:12px;margin-top:10px;padding:8px 12px;
+  background:#f9fafb;border-left:3px solid var(--pri);border-radius:0 6px 6px 0;
 }
 .status{
-  margin-top:10px;padding:8px 12px;
-  border:1px solid #bfdbfe;border-radius:8px;
-  font-size:12px;color:#1e40af;min-height:2em;
-  background:#eff6ff;font-weight:500;
+  margin-top:10px;padding:8px 12px;border:1px solid #bfdbfe;border-radius:8px;
+  font-size:12px;color:#1e40af;min-height:2em;background:#eff6ff;font-weight:500;
 }
 </style>
 </head>
@@ -147,63 +98,71 @@ colgroup col:nth-child(4){width:12%}
   <div class="subtitle">各行のファイルをダウンロードし、氏名を入力して送信してください</div>
 </div>
 <div class="container">
+
+<div class="table-wrapper">
 <table class="job-table" aria-label="求人テーブル">
   <colgroup><col><col><col><col></colgroup>
   <thead>
-    <tr><th>求人情報</th><th>ダウンロード</th><th>氏名入力</th><th>送信</th></tr>
+    <tr>
+      <th id="th-info">求人情報</th>
+      <th id="th-dl">ダウンロード</th>
+      <th id="th-name">氏名を入力</th>
+      <th id="th-send">送信</th>
+    </tr>
   </thead>
   <tbody>
     <tr class="job-row" data-row="1" data-job-id="job-001">
-      <td aria-label="求人情報"><div class="job-title"><span class="row-num" aria-hidden="true">1</span>求人タイトル</div><div class="job-desc">サンプル説明文です。</div></td>
-      <td aria-label="ダウンロード"><a id="dl-job-001" class="btn dl-btn" role="button" data-role="download" data-row="1" data-job="001"
+      <td aria-labelledby="th-info"><div class="job-title"><span class="row-num" aria-hidden="true">1</span>求人タイトル</div><div class="job-desc">サンプル説明文です。</div></td>
+      <td aria-labelledby="th-dl"><a id="dl-job-001" class="btn dl-btn" role="button" data-role="download" data-row="1" data-job="001"
              data-fn="job1.txt" data-content="This is sample file for Job 1
 Line 2: Some example data
 Line 3: End of file">ダウンロード</a></td>
-      <td aria-label="氏名を入力"><input id="name-job-001" class="name-input" placeholder="氏名を入力" data-role="name" data-row="1" data-job="001"></td>
-      <td aria-label="送信"><button id="send-job-001" class="send-btn" type="button" data-role="send" data-row="1" data-job="001">送信</button></td>
+      <td aria-labelledby="th-name"><input id="name-job-001" class="name-input" placeholder="氏名を入力" data-role="name" data-row="1" data-job="001"></td>
+      <td aria-labelledby="th-send"><button id="send-job-001" class="send-btn" type="button" data-role="send" data-row="1" data-job="001">送信</button></td>
     </tr>
 
     <tr class="job-row" data-row="2" data-job-id="job-002">
-      <td aria-label="求人情報"><div class="job-title"><span class="row-num" aria-hidden="true">2</span>求人タイトル</div><div class="job-desc">サンプル説明文です。</div></td>
-      <td aria-label="ダウンロード"><a id="dl-job-002" class="btn dl-btn" role="button" data-role="download" data-row="2" data-job="002"
+      <td aria-labelledby="th-info"><div class="job-title"><span class="row-num" aria-hidden="true">2</span>求人タイトル</div><div class="job-desc">サンプル説明文です。</div></td>
+      <td aria-labelledby="th-dl"><a id="dl-job-002" class="btn dl-btn" role="button" data-role="download" data-row="2" data-job="002"
              data-fn="job2.txt" data-content="This is sample file for Job 2
 Line 2: Some example data
 Line 3: End of file">ダウンロード</a></td>
-      <td aria-label="氏名を入力"><input id="name-job-002" class="name-input" placeholder="氏名を入力" data-role="name" data-row="2" data-job="002"></td>
-      <td aria-label="送信"><button id="send-job-002" class="send-btn" type="button" data-role="send" data-row="2" data-job="002">送信</button></td>
+      <td aria-labelledby="th-name"><input id="name-job-002" class="name-input" placeholder="氏名を入力" data-role="name" data-row="2" data-job="002"></td>
+      <td aria-labelledby="th-send"><button id="send-job-002" class="send-btn" type="button" data-role="send" data-row="2" data-job="002">送信</button></td>
     </tr>
 
     <tr class="job-row" data-row="3" data-job-id="job-003">
-      <td aria-label="求人情報"><div class="job-title"><span class="row-num" aria-hidden="true">3</span>求人タイトル</div><div class="job-desc">サンプル説明文です。</div></td>
-      <td aria-label="ダウンロード"><a id="dl-job-003" class="btn dl-btn" role="button" data-role="download" data-row="3" data-job="003"
+      <td aria-labelledby="th-info"><div class="job-title"><span class="row-num" aria-hidden="true">3</span>求人タイトル</div><div class="job-desc">サンプル説明文です。</div></td>
+      <td aria-labelledby="th-dl"><a id="dl-job-003" class="btn dl-btn" role="button" data-role="download" data-row="3" data-job="003"
              data-fn="job3.txt" data-content="This is sample file for Job 3
 Line 2: Some example data
 Line 3: End of file">ダウンロード</a></td>
-      <td aria-label="氏名を入力"><input id="name-job-003" class="name-input" placeholder="氏名を入力" data-role="name" data-row="3" data-job="003"></td>
-      <td aria-label="送信"><button id="send-job-003" class="send-btn" type="button" data-role="send" data-row="3" data-job="003">送信</button></td>
+      <td aria-labelledby="th-name"><input id="name-job-003" class="name-input" placeholder="氏名を入力" data-role="name" data-row="3" data-job="003"></td>
+      <td aria-labelledby="th-send"><button id="send-job-003" class="send-btn" type="button" data-role="send" data-row="3" data-job="003">送信</button></td>
     </tr>
 
     <tr class="job-row" data-row="4" data-job-id="job-004">
-      <td aria-label="求人情報"><div class="job-title"><span class="row-num" aria-hidden="true">4</span>求人タイトル</div><div class="job-desc">サンプル説明文です。</div></td>
-      <td aria-label="ダウンロード"><a id="dl-job-004" class="btn dl-btn" role="button" data-role="download" data-row="4" data-job="004"
+      <td aria-labelledby="th-info"><div class="job-title"><span class="row-num" aria-hidden="true">4</span>求人タイトル</div><div class="job-desc">サンプル説明文です。</div></td>
+      <td aria-labelledby="th-dl"><a id="dl-job-004" class="btn dl-btn" role="button" data-role="download" data-row="4" data-job="004"
              data-fn="job4.txt" data-content="This is sample file for Job 4
 Line 2: Some example data
 Line 3: End of file">ダウンロード</a></td>
-      <td aria-label="氏名を入力"><input id="name-job-004" class="name-input" placeholder="氏名を入力" data-role="name" data-row="4" data-job="004"></td>
-      <td aria-label="送信"><button id="send-job-004" class="send-btn" type="button" data-role="send" data-row="4" data-job="004">送信</button></td>
+      <td aria-labelledby="th-name"><input id="name-job-004" class="name-input" placeholder="氏名を入力" data-role="name" data-row="4" data-job="004"></td>
+      <td aria-labelledby="th-send"><button id="send-job-004" class="send-btn" type="button" data-role="send" data-row="4" data-job="004">送信</button></td>
     </tr>
 
     <tr class="job-row" data-row="5" data-job-id="job-005">
-      <td aria-label="求人情報"><div class="job-title"><span class="row-num" aria-hidden="true">5</span>求人タイトル</div><div class="job-desc">サンプル説明文です。</div></td>
-      <td aria-label="ダウンロード"><a id="dl-job-005" class="btn dl-btn" role="button" data-role="download" data-row="5" data-job="005"
+      <td aria-labelledby="th-info"><div class="job-title"><span class="row-num" aria-hidden="true">5</span>求人タイトル</div><div class="job-desc">サンプル説明文です。</div></td>
+      <td aria-labelledby="th-dl"><a id="dl-job-005" class="btn dl-btn" role="button" data-role="download" data-row="5" data-job="005"
              data-fn="job5.txt" data-content="This is sample file for Job 5
 Line 2: Some example data
 Line 3: End of file">ダウンロード</a></td>
-      <td aria-label="氏名を入力"><input id="name-job-005" class="name-input" placeholder="氏名を入力" data-role="name" data-row="5" data-job="005"></td>
-      <td aria-label="送信"><button id="send-job-005" class="send-btn" type="button" data-role="send" data-row="5" data-job="005">送信</button></td>
+      <td aria-labelledby="th-name"><input id="name-job-005" class="name-input" placeholder="氏名を入力" data-role="name" data-row="5" data-job="005"></td>
+      <td aria-labelledby="th-send"><button id="send-job-005" class="send-btn" type="button" data-role="send" data-row="5" data-job="005">送信</button></td>
     </tr>
   </tbody>
 </table>
+</div>
 
 <div class="nav">
   <button id="nav-prev" class="nav-btn" type="button" data-target="index.html">← 前のページ</button>
@@ -226,14 +185,21 @@ Line 3: End of file">ダウンロード</a></td>
     const url = URL.createObjectURL(new Blob([content], {type:'text/plain'}));
     createdUrls.push(url);
     a.href = url; a.setAttribute('download', filename);
-    a.addEventListener('click', ()=>{ setStatus('ダウンロード完了: ' + filename); statusBox.dataset.lastAction='download'; statusBox.dataset.lastRow=a.dataset.row; });
+    a.addEventListener('click', ()=>{
+      setStatus('ダウンロード完了: ' + filename);
+      statusBox.dataset.lastAction='download';
+      statusBox.dataset.lastRow=a.dataset.row;
+    });
   });
 
   document.querySelectorAll('[data-role="send"]').forEach(btn=>{
     btn.addEventListener('click', ()=>{
       const row = btn.dataset.row;
       const nameEl = document.querySelector('[data-role="name"][data-row="'+row+'"]');
-      setStatus(`送信完了：行=${row}　担当者="${nameEl?.value||''}"`); statusBox.dataset.lastAction='send'; statusBox.dataset.lastRow=row; statusBox.dataset.lastName=nameEl?.value||'';
+      setStatus(`送信完了：行=${row}　担当者="${nameEl?.value||''}"`);
+      statusBox.dataset.lastAction='send';
+      statusBox.dataset.lastRow=row;
+      statusBox.dataset.lastName=nameEl?.value||'';
     });
   });
 
